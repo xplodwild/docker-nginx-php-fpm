@@ -1,4 +1,12 @@
-# hub.docker.com/tiredofit/nginx-php-fpm
+# hub.docker.com/r/tiredofit/nginx-php-fpm
+
+[![Build Status](https://img.shields.io/docker/build/tiredofit/nginx-php-fpm.svg)](https://hub.docker.com/r/tiredofit/nginx-php-fpm)
+[![Docker Pulls](https://img.shields.io/docker/pulls/tiredofit/nginx-php-fpm.svg)](https://hub.docker.com/r/tiredofit/nginx-php-fpm)
+[![Docker Stars](https://img.shields.io/docker/stars/tiredofit/nginx-php-fpm.svg)](https://hub.docker.com/r/tiredofit/nginx-php-fpm)
+[![Docker 
+Layers](https://images.microbadger.com/badges/image/tiredofit/nginx-php-fpm.svg)](https://microbadger.com/images/tiredofit/nginx-php-fpm)
+
+
 
 # Introduction
 
@@ -9,7 +17,6 @@ Dockerfile to build a [Nginx](https://www.nginx.org) w/[PHP-FPM](https://php.net
 * Caching is provided with w/ APC, OpCache
 * All available PHP Extensions included
 * Enabled by default extensions are: apcu, bcmath, ctype, curl, dom, gd, iconv, intl, json, ldap, mbstring, mcrypt, opcache, openssl, pdo, pdo_mysql, pdo_sqlite, pgsql, phar, redis, session, xml, xmlreader, zlib
-
 
 
 [Changelog](CHANGELOG.md)
@@ -54,10 +61,11 @@ The following image tags are available:
 * `5.3-latest` - PHP 5.3.29 w/Alpine 3.4
 * `5.5-latest` - PHP 5.5..38 w/Alpine 3.4
 * `5.6-latest` - PHP 5.6.x w/Alpine 3.5
-* `7.0-latest` - PHP 7.0.x w/Alpine 3.5
-* `7.1-latest` - PHP 7.1.x w/Alpine 3.6
-* `7.1-ldap-latest` - PHP 7.1.x w/LDAP Authentication w/Alpine 3.6
-* `edge/latest` - Most recent release of PHP w/most recent Alpine Linux
+* `7.0-latest` - PHP 7.0.x w/Alpine 3.6
+* `7.1-latest` - PHP 7.1.x w/Alpine 3.7
+* `7.1-ldap-latest` - PHP 7.1.x w/LDAP Authentication w/Alpine 3.7
+* `7.2-latest` - PHP 7.2.x w/Alpine 3.8
+* `edge-latest` - Most recent release of PHP w/most recent Alpine Linux
 
 # Quick Start
 
