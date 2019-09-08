@@ -140,6 +140,7 @@ FROM tiredofit/alpine:3.9
 
 ### Copy Zipkin modules
 COPY --from=builder /usr/local/nginx/modules/ngx_http_opentracing_module.so /usr/local/nginx/modules/ngx_http_opentracing_module.so
+COPY --from=builder /usr/local/lib/libzipkin_opentracing_plugin.so /usr/local/lib/libzipkin_opentracing_plugin.so
 
 ### Nginx and PHP7 Setup
 RUN   sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php7/php.ini && \
