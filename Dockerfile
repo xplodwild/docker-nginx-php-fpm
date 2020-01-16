@@ -150,6 +150,7 @@ COPY --from=builder /usr/local/lib/libopentracing.so /usr/local/lib/libopentraci
 
 ### Nginx and PHP7 Setup
 RUN   sed -i 's/;cgi.fix_pathinfo=1/cgi.fix_pathinfo=0/g' /etc/php7/php.ini && \
+      sed -i 's/memory_limit = 128M/memory_limit = 256M/g' /etc/php7/php.ini && \
       sed -i "s/nginx:x:100:101:nginx:\/var\/lib\/nginx:\/sbin\/nologin/nginx:x:100:101:nginx:\/www:\/bin\/bash/g" /etc/passwd && \
       sed -i "s/nginx:x:100:101:nginx:\/var\/lib\/nginx:\/sbin\/nologin/nginx:x:100:101:nginx:\/www:\/bin\/bash/g" /etc/passwd- && \
       ln -s /sbin/php-fpm7 /sbin/php-fpm && \
